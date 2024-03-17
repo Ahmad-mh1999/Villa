@@ -1,0 +1,49 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.accordion .accordion-item{
+    border: 0 !important;
+    border-bottom: 1px solid var(--accordion-border-color) !important;
+}
+.accordion-header{
+    outline: none !important;
+}
+.accordion-header button{
+    color: var(--main-color) !important;
+    background-color: var(--accordion-button-color) !important;
+    outline: none !important;
+}
+
+.accordion-header button.collapsed {
+    color: var(--black-color) !important;
+}
+.accordion-header button.collapsed::after,
+.accordion-header button::after{
+    display: none !important;
+}

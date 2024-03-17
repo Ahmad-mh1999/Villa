@@ -1,0 +1,101 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+.featured{
+    min-height: 100vh;
+    max-height: max-content;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif !important;
+}
+.featured .featured-content img.featured-img{
+    width: 300px; 
+    height: 415px;
+    margin-left: 45px;
+}
+.featured .featured-content  div.icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+    z-index: 10;
+    width : 110px ;
+    height : 110px ;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+.featured .featured-content h6{
+    color: var(--title-section-color);
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 5px;
+    border-left: 2px solid var(--title-section-color);
+    margin-bottom: 50px;
+}
+.featured .featured-content h2.secondry-title{
+    font-size: var(--larg-size) !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 56px;
+    width: 305px;
+    margin-bottom: 30px;
+}
+@media  (max-width: 768px){
+    .featured .featured-content  div.icon{
+        position: absolute;
+        bottom: -30px;
+        width : 80px ;
+        height : 80px ;
+    }
+    .featured .featured-content  div.icon img{
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: 3px;
+        top: 2px;
+    }
+    .featured .featured-content img.featured-img{
+        width: 80%; 
+        height: 415px;
+        margin-left: 45px;
+    }
+    .featured .featured-content .col-sm-12:first-child{
+        margin-bottom: 100px;
+    }
+    .featured .featured-content .col-sm-12:nth-child(2){
+        padding: 0 30px;
+    }
+    .featured .featured-content .col-sm-12:nth-child(3){
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}

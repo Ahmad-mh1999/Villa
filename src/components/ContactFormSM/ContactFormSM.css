@@ -1,0 +1,84 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.contact-form-sm{
+    width: 420px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: var(--white-color);
+}
+.contact-form-sm .field label{
+    font-size: var(--meduim-size);
+    color: var(--label-color);
+    margin-bottom: 15px;
+}
+.contact-form-sm .field input{
+    width: 100%;
+    height: 44px;
+    border-radius: 22px;
+    background-color: var(--input-color);
+    border: none;
+    margin-bottom: 30px;
+    font-size: var(--meduim-sm-size);
+    padding: 0px 15px;
+}
+.contact-form-sm .field textarea{
+    width: 100%;
+    border-radius: 22px;
+    background-color: var(--input-color);
+    border: none;
+    margin-bottom: 30px;
+    font-size: var(--meduim-sm-size);
+    padding: 10px 15px;
+}
+.contact-form-sm .form-button-sm{
+    background-color: var(--form-bg-color);
+    width: 170px;
+    height: 44px;
+    margin-bottom: 33px;
+    border-radius: 22px;
+    padding: 0px 20px;
+    color: var(--white-color);
+    border: none;
+    font-size: var(--meduim-size);
+    font-weight: 500;
+    transition: all .5s;
+}
+@media  (max-width: 768px){
+    .contact-form-sm{
+        width: 94%;
+        margin-left: 0;
+        position: relative;
+        margin-bottom: 200px;
+        top: 0px;
+        z-index: 80;
+    }
+}
