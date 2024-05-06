@@ -1,0 +1,114 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.property-card{
+    width: 356px;
+    height: max-content;
+    background-color: var(--accordion-button-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.property-card .card-image img{
+    width: 296px !important;
+    border-radius: 10px;
+}
+.property-card .card-content .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.property-card .card-content .category h5{
+    background-color: var(--category-bg-color);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: var(--meduim-sm-size);
+    color: var(--form-bg-color);
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+}
+.property-card .card-content .price h6{
+    font-size: var(--meduim-lm-size);
+    color: var(--main-color);
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    font-weight: 700 !important;
+    
+}
+.card-content .card-text h4{
+    color: var(--form-bg-color);
+    margin-top: 20px;
+}
+.card-content .card-text ul{
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.card-content .card-text ul li{
+    display: inline-block;
+    font-size: var(--meduim-size);
+    padding-right: 12px;
+    color: var(--text-p-color);
+}
+.card-content .card-text ul li span{
+    font-weight: 600;
+    color: var(--form-bg-color);
+}
+.card-content .card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content .card-button button{
+    display: inline-block;
+    background-color: var(--form-bg-color);
+    color: var(--white-color);
+    font-size: var(--meduim-sm-size);
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all .3s;
+}
+@media (max-width:756px){
+    .property-card{
+        width: 300px;
+        padding: 20px;
+    }
+    .property-card .card-image img{
+        width: 260px !important;
+        
+}
+}

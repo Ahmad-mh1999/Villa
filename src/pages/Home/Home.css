@@ -1,0 +1,104 @@
+#root{
+  --main-color : #f35525 ;
+  --white-color : #ffffff ;
+  --black-color : #000000 ;
+  --label-color : #3a3a3a ;
+  --input-color : #f6f6f6 ;
+  --form-bg-color : #1e1e1e ;
+  --title-section-color : #ee626b ;
+  --header-color : #7a7a7a ;
+  --accordion-button-color : #fafafa ;
+  --accordion-border-color : #f3f0f0 ;
+  --text-p-color : #4a4a4a ;
+  --table-bg-color : #eee ;
+  --table-color : #aaa ;
+  --facts-bg-color : #ffeee9 ;
+  --category-bg-color : #fbd9cf ;
+  
+  /* Fonts Size*/
+  --larg-x-size : 62px ;
+  --larg-size : 40px ;
+  --larg-s-size : 35px ;
+  --larg-sm-size : 28px ;
+  --meduim-lx-size : 25px ;
+  --meduim-lm-size : 20px ;
+  --meduim-ls-size : 16px ;
+  --meduim-size : 15px ;
+  --meduim-sm-size : 14px ;
+  --small-size : 12px ;
+  }
+
+.home-page {
+  width: 100%;
+  overflow: hidden !important;
+  height: max-content;
+}
+
+.home-page .fun-section {
+  position: relative;
+  height: max-content;
+  margin-bottom: 100px;
+}
+
+.home-page #bestProperty .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-page #bestProperty .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-page #bestProperty .title h6 {
+  color: var(--title-section-color);
+  font-size: var(--meduim-size);
+  font-weight: 700;
+  padding-left: 5px;
+  border-left: 2px solid var(--title-section-color);
+  text-align: center;
+  width: 50px;
+}
+
+.home-page #bestProperty .title h2.secondry-title {
+  font-size: var(--larg-size) !important;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+  text-align: center;
+  width: 305px;
+  margin-bottom: 30px;
+}
+#contactSection{
+  min-height: 1200px;
+  max-height: max-content;
+}
+@media (max-width: 767px) {
+    .home-page .fun-section .col-sm-12{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-page #bestProperty .col-sm-12{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .home-page  .flex-c{
+      margin-top: 500px !important;
+      
+  }
+  #contactSection{
+    height: 2000px;
+  }
+  .home-page .col-lg-12:last-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

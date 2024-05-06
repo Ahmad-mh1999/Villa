@@ -1,0 +1,171 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.best-deal .best-deal-header ul.fillter-deal{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 140px;
+}
+.best-deal .best-deal-header h6{
+    color: var(--title-section-color);
+    font-size: var(--meduim-size);
+    font-weight: 700;
+    padding-left: 5px;
+    border-left: 2px solid var(--title-section-color);
+    margin-bottom: 50px;
+}
+.best-deal .best-deal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-deal .best-deal-header h2.secondry-title{
+    font-size: var(--larg-size) !important;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 56px;
+    width: 305px;
+    margin-bottom: 30px;
+}
+.active-best{
+    background-color: var(--main-color) !important;
+    border: none;
+    color: var(--white-color);
+}
+
+.best-deal .best-deal-content{
+    padding-bottom: 100px !important;
+}
+.best-deal .best-deal-header .fillter-deal li button{
+    width: 150px;
+    height: 50px;
+    font-size: var(--meduim-ls-size);
+    font-weight: 500;
+    background-color: var(--form-bg-color) ;
+    border-radius: 5px;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0px 25px;
+    color: var(--white-color);
+}
+.best-deal-content img{
+    width: 456px !important;
+    height: 346px !important;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 65px;
+}
+.best-deal-content h4{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.best-deal-content p{
+    font-size: var(--meduim-sm-size);
+    line-height: 28px;
+    color: var(--text-p-color);
+}
+.best-deal-content .schedule-btn{
+    position: relative;
+    padding-left: 20px !important;
+    width: 186px;
+    height: 40px;
+    background-color: var(--form-bg-color);
+    color: var(--white-color);
+    font-size: var(--meduim-sm-size);
+    font-weight: 400;
+    text-transform: none;
+    border-radius: 20px;
+    padding-left: 0px;
+}
+.best-deal-content .calendar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar i,svg{
+    font-size: var(--meduim-sm-size);
+    color: #eee;
+}
+@media (max-width:756px) {
+    .best-deal .best-deal-header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .best-deal-text{
+        text-align: center;
+    }
+    .best-deal-content img{
+        width: 98% !important;
+        margin: 0;
+    }
+    .best-deal .best-deal-header .fillter-deal li button{
+        width: 110px;
+        height: 35px;
+        font-size: var(--meduim-size);
+        line-height: 20px;
+        padding: 0px 5px;
+    }
+    .best-deal-content .row .col-md-3:first-child{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .best-deal-content .row .col-sm-12:nth-child(2){
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .best-deal-content .row .col-sm-12:nth-child(3){
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .best-deal-content .row .col-sm-12:nth-child(3) p{
+        margin-bottom: 50px;
+    }
+    .best-deal .best-deal-header ul.fillter-deal{
+        padding-left: 0 !important;
+    }
+    .best-deal .best-deal-content{
+        padding-bottom: 0px !important;
+    }
+}

@@ -1,0 +1,73 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.fun-facts{
+    background-color: var(--facts-bg-color);
+    position: relative;
+    border-radius: 10px;
+    width: 270px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fun-facts h2{
+    font-size: var(--larg-size) !important;
+    font-weight: bold;
+    color: var(--main-color);
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.fun-facts p{
+    text-align: left;
+    width: 120px;
+    font-size: 18px;
+    color: var(--form-bg-color);
+    font-weight: 600;
+    text-align: left;
+    line-height: 28px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.fun-facts p::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+@media  (max-width: 768px){
+    .fun-facts{
+        margin-bottom: 30px;
+    }
+}

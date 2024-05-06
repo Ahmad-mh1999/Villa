@@ -1,0 +1,84 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-s-size : 35px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.details-page .details-content{
+    margin-top: 120px;
+}
+.details-page .details-img img{
+    width: 100%;
+}
+.details-page .details-content .Specifications{
+    margin-left: 60px;
+}
+.details-page .details-content .main-content span{
+    background-color: var(--category-bg-color);
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: var(--meduim-sm-size);
+    color: var(--form-bg-color);
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 40px;
+}
+.details-page .details-content .main-content h4{
+    font-size: var(--meduim-lx-size) !important;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--table-bg-color);
+}
+.details-page .details-content .main-content p{
+    margin-bottom: 50px;
+}
+/* .details-page .details-content .deal */
+.details-page .details-content .deal{
+    margin-top: 120px;
+    min-height: 1000px;
+    max-height: max-content;
+}
+@media (max-width:756px){
+    .details-page .details-content  {
+        padding-bottom: 20px !important;
+    }
+    .details-page .details-content .main-content {
+        padding: 20px;
+    }
+    .details-page .details-content .Specifications{
+        margin-left: 0px;
+    }
+    .details-page > div.details-content > div > div.row > div.col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .details-page .details-content .deal{
+        margin-bottom: 120px;
+    }
+}

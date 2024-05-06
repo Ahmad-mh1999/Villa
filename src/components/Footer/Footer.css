@@ -1,0 +1,63 @@
+#root{
+    --main-color : #f35525 ;
+    --white-color : #ffffff ;
+    --black-color : #000000 ;
+    --label-color : #3a3a3a ;
+    --input-color : #f6f6f6 ;
+    --form-bg-color : #1e1e1e ;
+    --title-section-color : #ee626b ;
+    --header-color : #7a7a7a ;
+    --accordion-button-color : #fafafa ;
+    --accordion-border-color : #f3f0f0 ;
+    --text-p-color : #4a4a4a ;
+    --table-bg-color : #eee ;
+    --table-color : #aaa ;
+    --facts-bg-color : #ffeee9 ;
+    --category-bg-color : #fbd9cf ;
+    
+    /* Fonts Size*/
+    --larg-x-size : 62px ;
+    --larg-size : 40px ;
+    --larg-sm-size : 28px ;
+    --meduim-lx-size : 25px ;
+    --meduim-lm-size : 20px ;
+    --meduim-ls-size : 16px ;
+    --meduim-size : 15px ;
+    --meduim-sm-size : 14px ;
+    --small-size : 12px ;
+    }
+
+.flex-c {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    background-color: var(--form-bg-color);
+    color: var(--white-color);
+    position: absolute;
+    bottom: -25px;
+    z-index: 0;
+}
+
+.flex-c h6 {
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+.flex-c h6 a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+@media (max-width: 756px) {
+    .flex-c{
+        margin-top: 0px;
+    }
+    .flex-c h6 {
+        font-size: var(--small-size) !important;
+        font-weight: 300;
+        line-height: 20px;
+        padding: 5px 20px;
+    }
+}
